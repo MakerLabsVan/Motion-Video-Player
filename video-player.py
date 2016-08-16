@@ -4,7 +4,7 @@ import RPi.GPIO as GPIO
 
 # Constants
 sensorPin = ??
-clipDuration = ??
+clipDuration = 640
 
 # Variables
 lastPlay = 0
