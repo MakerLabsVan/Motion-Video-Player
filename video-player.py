@@ -7,8 +7,8 @@ sensorPin = 14
 clipDuration = 640
 
 # Variables
-lastPlay = 0
 i = 0
+lastPlay = 0
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(sensorPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
@@ -20,3 +20,4 @@ while True:
 		if (time.time() - lastPlay) > clipDuration:
 			os.system('omxplayer -o local 3YearsInHastingsPark.mp4')
 			lastPlay = time.time()
+			i = 0
