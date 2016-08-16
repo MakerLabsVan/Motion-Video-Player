@@ -3,7 +3,7 @@ import time
 import RPi.GPIO as GPIO
 
 # Constants
-sensorPin = ??
+sensorPin = 14
 clipDuration = 640
 
 # Variables
