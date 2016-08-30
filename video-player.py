@@ -21,6 +21,6 @@ while True:
 		print "Motion %d detected" % i
 
 		if (time.time() - lastPlay) > clipDuration:
-			os.system(command + video)	
 			lastPlay = time.time()
+			os.system(command + video)	
 			i = 0
